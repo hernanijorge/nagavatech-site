@@ -1,0 +1,135 @@
+[
+  {
+    "id": "taskflow",
+    "category": "apps",
+    "subcategory": "productivity",
+    "name": { "en": "TaskFlow", "pt": "TaskFlow" },
+    "description": {
+      "en": "Lightweight project and task manager for small teams, with offline mode and no per-seat bloat.",
+      "pt": "Gerenciador de projetos e tarefas leve para times pequenos, com modo offline e sem excesso de recursos."
+    },
+    "specs": {
+      "en": ["Unlimited projects", "Offline-first sync", "Team roles & permissions"],
+      "pt": ["Projetos ilimitados", "Sincronização offline-first", "Papéis e permissões de equipe"]
+    },
+    "price": 9.9,
+    "currency": "USD",
+    "price_note": { "en": "per seat / month", "pt": "por usuário / mês" },
+    "image": "assets/img/placeholder-app.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "ledgerly",
+    "category": "apps",
+    "subcategory": "finance",
+    "name": { "en": "Ledgerly", "pt": "Ledgerly" },
+    "description": {
+      "en": "Simple invoicing and cash-flow tracking for freelancers and small businesses.",
+      "pt": "Emissão de faturas e controle de fluxo de caixa simples para autônomos e pequenos negócios."
+    },
+    "specs": {
+      "en": ["Unlimited invoices", "Cash-flow dashboard", "CSV & PDF export"],
+      "pt": ["Faturas ilimitadas", "Painel de fluxo de caixa", "Exportação em CSV e PDF"]
+    },
+    "price": 129,
+    "currency": "USD",
+    "price_note": { "en": "one-time license", "pt": "licença vitalícia" },
+    "image": "assets/img/placeholder-app.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "fieldlog",
+    "category": "apps",
+    "subcategory": "field-ops",
+    "name": { "en": "FieldLog", "pt": "FieldLog" },
+    "description": {
+      "en": "Mobile-friendly field report and checklist app for crews working on-site.",
+      "pt": "App de relatórios e checklists de campo, otimizado para celular, pra equipes em obra ou visita técnica."
+    },
+    "specs": {
+      "en": ["Photo-attached reports", "Custom checklists", "Works without signal"],
+      "pt": ["Relatórios com fotos anexadas", "Checklists personalizáveis", "Funciona sem sinal"]
+    },
+    "price": 14.9,
+    "currency": "USD",
+    "price_note": { "en": "per seat / month", "pt": "por usuário / mês" },
+    "image": "assets/img/placeholder-app.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "nv-mini-01",
+    "category": "hardware",
+    "subcategory": "mini-pc",
+    "name": { "en": "NagavaTech Mini One", "pt": "NagavaTech Mini One" },
+    "description": {
+      "en": "Fanless mini desktop for everyday office work, point-of-sale and digital signage.",
+      "pt": "Mini desktop sem ventoinha para escritório, PDV e sinalização digital no dia a dia."
+    },
+    "specs": {
+      "en": ["Intel N100, 4 cores", "16GB RAM / 512GB SSD", "Wi-Fi 6 + Gigabit LAN"],
+      "pt": ["Intel N100, 4 núcleos", "16GB RAM / 512GB SSD", "Wi-Fi 6 + LAN Gigabit"]
+    },
+    "price": 329,
+    "currency": "USD",
+    "price_note": { "en": "", "pt": "" },
+    "image": "assets/img/placeholder-minipc.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "nv-mini-02",
+    "category": "hardware",
+    "subcategory": "mini-pc",
+    "name": { "en": "NagavaTech Mini Pro", "pt": "NagavaTech Mini Pro" },
+    "description": {
+      "en": "Higher-output mini desktop for small servers, dev boxes and multi-monitor setups.",
+      "pt": "Mini desktop de maior desempenho para servidores pequenos, ambiente de dev e múltiplos monitores."
+    },
+    "specs": {
+      "en": ["Ryzen 7 5825U, 8 cores", "32GB RAM / 1TB NVMe SSD", "Triple display out"],
+      "pt": ["Ryzen 7 5825U, 8 núcleos", "32GB RAM / 1TB SSD NVMe", "Saída para 3 monitores"]
+    },
+    "price": 649,
+    "currency": "USD",
+    "price_note": { "en": "", "pt": "" },
+    "image": "assets/img/placeholder-minipc.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "nv-laptop-01",
+    "category": "hardware",
+    "subcategory": "laptop",
+    "name": { "en": "NagavaTech Work 14", "pt": "NagavaTech Work 14" },
+    "description": {
+      "en": "14-inch everyday laptop for business and study, configured and tested before shipping.",
+      "pt": "Laptop 14\" para trabalho e estudo no dia a dia, configurado e testado antes do envio."
+    },
+    "specs": {
+      "en": ["Intel Core i5, 12th gen", "16GB RAM / 512GB SSD", "9h+ battery life"],
+      "pt": ["Intel Core i5, 12ª geração", "16GB RAM / 512GB SSD", "Bateria de 9h+"]
+    },
+    "price": 599,
+    "currency": "USD",
+    "price_note": { "en": "", "pt": "" },
+    "image": "assets/img/placeholder-laptop.svg",
+    "payment_link": ""
+  },
+  {
+    "id": "nv-laptop-02",
+    "category": "hardware",
+    "subcategory": "laptop",
+    "name": { "en": "NagavaTech Dev 16", "pt": "NagavaTech Dev 16" },
+    "description": {
+      "en": "16-inch development laptop with room to run containers, IDEs and VMs without slowing down.",
+      "pt": "Laptop de desenvolvimento 16\" com fôlego pra rodar containers, IDEs e VMs sem travar."
+    },
+    "specs": {
+      "en": ["Ryzen 9 7940HS, 8 cores", "32GB RAM / 1TB NVMe SSD", "165Hz display"],
+      "pt": ["Ryzen 9 7940HS, 8 núcleos", "32GB RAM / 1TB SSD NVMe", "Tela 165Hz"]
+    },
+    "price": 1099,
+    "currency": "USD",
+    "price_note": { "en": "", "pt": "" },
+    "image": "assets/img/placeholder-laptop.svg",
+    "payment_link": ""
+  }
+]

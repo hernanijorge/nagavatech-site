@@ -1,0 +1,6 @@
+# Local-only reference images: brand-board.jpg shows a business card with
+# personal phone/email, and these root copies are just the originals you
+# dropped in before I copied them into assets/img/. Keep them off GitHub.
+/nagavatech-cinza.png
+/nagavatech-utilizacoes-logo-exemplo.jpg
+assets/img/brand-board.jpg

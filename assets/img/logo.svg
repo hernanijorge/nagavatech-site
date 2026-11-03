@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 280" role="img" aria-labelledby="nvLogoTitle">
+  <title id="nvLogoTitle">NagavaTech</title>
+  <g transform="translate(10,0)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="100" cy="100" r="74" stroke-width="6" />
+    <circle cx="152.3" cy="47.7" r="9" stroke-width="6" />
+    <circle cx="152.3" cy="152.3" r="9" stroke-width="6" />
+    <circle cx="47.7" cy="152.3" r="9" stroke-width="6" />
+    <circle cx="47.7" cy="47.7" r="9" stroke-width="6" />
+    <path d="M72,144 L72,60 L128,144 L128,60" stroke-width="9" />
+    <path d="M72,60 L47.7,47.7 M128,60 L152.3,47.7 M72,144 L47.7,152.3 M128,144 L152.3,152.3" stroke-width="6" />
+  </g>
+  <text x="110" y="232" text-anchor="middle" font-family="Questrial, Arial, sans-serif" font-size="30" letter-spacing="1.5" fill="currentColor">NAGAVA<tspan dx="2" dy="-3" font-size="20">●</tspan><tspan dy="3">TECH</tspan></text>
+</svg>
+
