@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<canvas id="c"></canvas>
+<script>
+function exportPNG(svgPath, w, h) {
+  return new Promise(function (resolve, reject) {
+    var img = new Image();
+    img.onload = function () {
+      var canvas = document.getElementById("c");
+      canvas.width = w;
+      canvas.height = h;
+      var ctx = canvas.getContext("2d");
+      ctx.clearRect(0, 0, w, h);
+      ctx.drawImage(img, 0, 0, w, h);
+      resolve(canvas.toDataURL("image/png"));
+    };
+    img.onerror = function (e) { reject("load error: " + svgPath); };
+    img.src = svgPath + "?_=" + Date.now();
+  });
+}
+window.exportPNG = exportPNG;
+</script>
+</body>
+</html>

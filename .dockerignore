@@ -1,5 +1,10 @@
 .git
+.devtools
 README.md
+Dockerfile
+nginx.conf
 nagavatech-cinza.png
 nagavatech-utilizacoes-logo-exemplo.jpg
 assets/img/brand-board.jpg
+contact.php
+.htaccess

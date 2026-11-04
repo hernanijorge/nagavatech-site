@@ -144,8 +144,8 @@ section.on-dark .circuit-divider { background: var(--border-dark); }
   gap: 12px;
   margin-bottom: 28px;
 }
-.hero-brand .logo-mark { height: 42px; width: 42px; }
-.hero-brand .logo-text { font-size: 22px; letter-spacing: 0.09em; }
+.hero-brand .hero-badge { height: 80px; width: 80px; border-radius: 18px; flex-shrink: 0; }
+.hero-brand .logo-text { font-size: 30px; letter-spacing: 0.09em; }
 
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a {

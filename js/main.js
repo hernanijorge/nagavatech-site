@@ -211,17 +211,51 @@
         return;
       }
 
-      var body = message + "\n\n" + name + " <" + email + ">";
-      var mailto = "mailto:" + CONTACT_EMAIL +
-        "?subject=" + encodeURIComponent(subject || "Contact from nagavatech.tech") +
-        "&body=" + encodeURIComponent(body);
+      var endpoint = (window.NagavaConfig && window.NagavaConfig.FORM_ENDPOINT) || "";
+      var submitBtn = form.querySelector("button[type=submit]");
 
-      window.location.href = mailto;
-
-      if (status) {
-        status.textContent = t("contact.form.note");
-        status.className = "form-status ok";
+      function openMailto() {
+        var body = message + "\n\n" + name + " <" + email + ">";
+        var mailto = "mailto:" + CONTACT_EMAIL +
+          "?subject=" + encodeURIComponent(subject || "Contact from nagavatech.tech") +
+          "&body=" + encodeURIComponent(body);
+        window.location.href = mailto;
+        if (status) {
+          status.textContent = t("contact.form.note.mailto");
+          status.className = "form-status ok";
+        }
       }
+
+      if (!endpoint) {
+        openMailto();
+        return;
+      }
+
+      if (submitBtn) submitBtn.disabled = true;
+
+      var data = new FormData();
+      data.append("name", name);
+      data.append("email", email);
+      data.append("subject", subject || "Contact from nagavatech.tech");
+      data.append("message", message);
+      // Web3Forms also needs an access key: uncomment and fill in if using it.
+      // data.append("access_key", "YOUR-WEB3FORMS-ACCESS-KEY");
+
+      fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
+        .then(function (res) {
+          if (!res.ok) throw new Error("submit failed");
+          form.reset();
+          if (status) {
+            status.textContent = t("contact.form.note.sent");
+            status.className = "form-status ok";
+          }
+        })
+        .catch(function () {
+          openMailto(); // endpoint unreachable/misconfigured -- fall back to mailto
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 
