@@ -16,7 +16,8 @@
     "currency": "USD",
     "price_note": { "en": "per seat / month", "pt": "por usuário / mês" },
     "image": "assets/img/placeholder-app.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "ledgerly",
@@ -35,7 +36,8 @@
     "currency": "USD",
     "price_note": { "en": "one-time license", "pt": "licença vitalícia" },
     "image": "assets/img/placeholder-app.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "fieldlog",
@@ -54,7 +56,8 @@
     "currency": "USD",
     "price_note": { "en": "per seat / month", "pt": "por usuário / mês" },
     "image": "assets/img/placeholder-app.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "nv-mini-01",
@@ -73,7 +76,8 @@
     "currency": "USD",
     "price_note": { "en": "", "pt": "" },
     "image": "assets/img/placeholder-minipc.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "nv-mini-02",
@@ -92,7 +96,8 @@
     "currency": "USD",
     "price_note": { "en": "", "pt": "" },
     "image": "assets/img/placeholder-minipc.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "nv-laptop-01",
@@ -111,7 +116,8 @@
     "currency": "USD",
     "price_note": { "en": "", "pt": "" },
     "image": "assets/img/placeholder-laptop.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   },
   {
     "id": "nv-laptop-02",
@@ -130,6 +136,7 @@
     "currency": "USD",
     "price_note": { "en": "", "pt": "" },
     "image": "assets/img/placeholder-laptop.svg",
-    "payment_link": ""
+    "payment_link": "",
+    "placeholder": true
   }
 ]

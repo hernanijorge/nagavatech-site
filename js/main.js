@@ -71,6 +71,7 @@
     var desc = p.description[l] || p.description.en;
     var specs = p.specs[l] || p.specs.en;
     var priceNote = (p.price_note && (p.price_note[l] || p.price_note.en)) || "";
+    var isPlaceholder = !!p.placeholder;
 
     var card = document.createElement("article");
     card.className = "product-card fade-up";
@@ -80,10 +81,26 @@
 
     var specsHtml = specs.map(function (s) { return "<li>" + s + "</li>"; }).join("");
 
-    var buyHref = p.payment_link && p.payment_link.trim()
-      ? p.payment_link
-      : waLink(t("wa.default_message") + " " + name);
-    var buyTarget = ' target="_blank" rel="noopener"';
+    var priceRowHtml = isPlaceholder
+      ? '<div class="price-row"><span class="badge-soon">' + t("catalog.placeholder.badge") + "</span></div>"
+      : '<div class="price-row"><span class="price">' + money(p.price, p.currency) +
+        (priceNote ? "<small>" + priceNote + "</small>" : "") + "</span></div>";
+
+    var actionsHtml;
+    if (isPlaceholder) {
+      var notifyHref = waLink(t("wa.notify_message") + " " + name);
+      actionsHtml = '<div class="actions">' +
+        '<a class="btn btn-primary btn-sm" href="' + notifyHref + '" target="_blank" rel="noopener">' + t("catalog.notify") + "</a>" +
+        "</div>";
+    } else {
+      var buyHref = p.payment_link && p.payment_link.trim()
+        ? p.payment_link
+        : waLink(t("wa.default_message") + " " + name);
+      actionsHtml = '<div class="actions">' +
+        '<a class="btn btn-primary btn-sm" href="' + buyHref + '" target="_blank" rel="noopener">' + t("catalog.buy") + "</a>" +
+        '<a class="btn btn-outline btn-sm" href="' + waLink(t("wa.default_message") + " " + name) + '" target="_blank" rel="noopener">' + t("catalog.quote") + "</a>" +
+        "</div>";
+    }
 
     card.innerHTML =
       '<div class="thumb"><img src="' + p.image + '" alt="' + name + '" loading="lazy" width="120" height="90"></div>' +
@@ -92,12 +109,9 @@
       "<h3>" + name + "</h3>" +
       '<p class="desc">' + desc + "</p>" +
       '<ul class="specs trace-list">' + specsHtml + "</ul>" +
-      '<div class="price-row"><span class="price">' + money(p.price, p.currency) +
-      (priceNote ? "<small>" + priceNote + "</small>" : "") + "</span></div>" +
-      '<div class="actions">' +
-      '<a class="btn btn-primary btn-sm" href="' + buyHref + '"' + buyTarget + ">" + t("catalog.buy") + "</a>" +
-      '<a class="btn btn-outline btn-sm" href="' + waLink(t("wa.default_message") + " " + name) + '" target="_blank" rel="noopener">' + t("catalog.quote") + "</a>" +
-      "</div></div>";
+      priceRowHtml +
+      actionsHtml +
+      "</div>";
 
     return card;
   }

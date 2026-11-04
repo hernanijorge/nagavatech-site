@@ -63,6 +63,8 @@
       "catalog.empty": "No products match your search.",
       "catalog.buy": "Buy",
       "catalog.quote": "Request a quote",
+      "catalog.placeholder.badge": "Coming soon",
+      "catalog.notify": "Notify me",
       "catalog.loading": "Loading catalog…",
 
       "about.eyebrow": "About NagavaTech",
@@ -105,6 +107,7 @@
       "footer.rights": "All rights reserved.",
 
       "wa.default_message": "Hi NagavaTech! I'd like to know more about",
+      "wa.notify_message": "Hi NagavaTech! I'm interested in",
     },
     pt: {
       "nav.apps": "Apps",
@@ -163,6 +166,8 @@
       "catalog.empty": "Nenhum produto encontrado.",
       "catalog.buy": "Comprar",
       "catalog.quote": "Pedir orçamento",
+      "catalog.placeholder.badge": "Em breve",
+      "catalog.notify": "Avise-me",
       "catalog.loading": "Carregando catálogo…",
 
       "about.eyebrow": "Sobre a NagavaTech",
@@ -205,6 +210,7 @@
       "footer.rights": "Todos os direitos reservados.",
 
       "wa.default_message": "Olá NagavaTech! Quero saber mais sobre",
+      "wa.notify_message": "Olá NagavaTech! Tenho interesse em",
     },
   };
 
