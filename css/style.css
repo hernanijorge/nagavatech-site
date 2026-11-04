@@ -122,7 +122,7 @@ section.on-dark .circuit-divider { background: var(--border-dark); }
   height: 76px;
 }
 
-.logo { display: flex; align-items: center; gap: 10px; color: var(--charcoal); }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--pcb-green); }
 .logo .logo-mark { height: 34px; width: 34px; flex-shrink: 0; }
 .logo-text {
   display: inline-flex;

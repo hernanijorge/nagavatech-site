@@ -238,8 +238,8 @@
       data.append("email", email);
       data.append("subject", subject || "Contact from nagavatech.tech");
       data.append("message", message);
-      // Web3Forms also needs an access key: uncomment and fill in if using it.
-      // data.append("access_key", "YOUR-WEB3FORMS-ACCESS-KEY");
+      var web3formsKey = (window.NagavaConfig && window.NagavaConfig.WEB3FORMS_KEY) || "";
+      if (web3formsKey) data.append("access_key", web3formsKey);
 
       fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
         .then(function (res) {
@@ -259,6 +259,15 @@
     });
   }
 
+  /* ---------- Placeholder content toggle ---------- */
+  function applyContentFlags() {
+    var show = window.NagavaConfig && window.NagavaConfig.SHOW_TESTIMONIALS;
+    if (show) return;
+    document.querySelectorAll('[data-flag-section="testimonials"], [data-flag-section="stats"]').forEach(function (el) {
+      el.style.display = "none";
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initYear();
@@ -266,6 +275,7 @@
     initWaFloat();
     initCatalog();
     initContactForm();
+    applyContentFlags();
   });
 
   document.addEventListener("nagavatech:langchange", function () {
