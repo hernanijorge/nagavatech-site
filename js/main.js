@@ -3,7 +3,7 @@
   "use strict";
 
   var WHATSAPP_NUMBER = "13396008241"; // https://wa.me/13396008241
-  var CONTACT_EMAIL = "nagatech@gmail.com";
+  var CONTACT_EMAIL = "nagavatech@gmail.com";
 
   function lang() {
     return (window.NagavaI18n && window.NagavaI18n.getLang()) || "en";

@@ -37,7 +37,7 @@ if (!empty($errors)) {
     exit;
 }
 
-$to = "nagatech@gmail.com";
+$to = "nagavatech@gmail.com";
 $mailSubject = "[NagavaTech contact] " . $subject;
 
 $body = "New message from the nagavatech.tech contact form\n\n";

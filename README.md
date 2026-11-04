@@ -104,7 +104,7 @@ translated** — translating full legal text was out of scope for v1.
 - `assets/img/brand-board.jpg` is your reference sheet (kept for my own context
   while building this) — it shows a business card with a **different** phone,
   email and domain (`nagavatec.com`) than what's used on the site. You confirmed
-  keeping the original data (nagavatech.tech / nagatech@gmail.com / +1 339 600-8241)
+  keeping the original data (nagavatech.tech / nagavatech@gmail.com / +1 339 600-8241)
   — this file is excluded from the deployed Docker image via `.dockerignore` since
   it has personal contact info on it, but it's still in the repo for reference.
 
@@ -113,7 +113,7 @@ translated** — translating full legal text was out of scope for v1.
 `contact.html` posts to `/contact.php` (for real PHP hosting) but the live site has
 no PHP, so `js/main.js` intercepts the submit, validates client-side (including the
 `company_website` honeypot field), and opens the visitor's email client via a
-`mailto:nagatech@gmail.com` link with the message pre-filled. If you move to real
+`mailto:nagavatech@gmail.com` link with the message pre-filled. If you move to real
 PHP hosting later, `contact.php` is ready to use as-is (reads `$_POST`, validates,
 calls `mail()`).
 
@@ -135,7 +135,7 @@ nameservers/DNS at that hosting instead of the VPS.
 
 1. Upload `contact.php` alongside the rest of the site.
 2. Submit the form on `/contact.html` with a real email in the `To:` field pointed
-   at `nagatech@gmail.com` — confirm delivery (check spam folder; shared hosting
+   at `nagavatech@gmail.com` — confirm delivery (check spam folder; shared hosting
    `mail()` deliverability varies, consider SPF/DKIM for the domain if emails don't
    arrive).
 3. Submit with the hidden `company_website` field filled (e.g. via browser dev
